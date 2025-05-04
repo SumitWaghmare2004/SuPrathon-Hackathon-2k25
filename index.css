@@ -1,3 +1,22 @@
+/* styles.css (Add this to the top of your CSS) */
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Optional: Slight fade-in on scroll */
+  [data-animate] {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  [data-animate].visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+
 /* styles.css */
 * {
     margin: 0;
@@ -114,7 +133,7 @@ section {
     transform: scale(1.2);
 }
 
-.register-button {
+/* .register-button {
     background: #00fff7;
     color: #000;
     padding: 12px 30px;
@@ -126,7 +145,26 @@ section {
 
 .register-button:hover {
     background: #00e1d2;
-}
+} */
+
+
+.register-btn {
+    background: transparent;
+    color: #00fff7;
+    border: 2px solid #00fff7;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 0 transparent;
+  }
+  
+  .register-btn:hover {
+    background: #00fff7;
+    color: #000;
+    box-shadow: 0 0 15px #00fff7, 0 0 30px #00fff7;
+    transform: scale(1.05);
+  }
 
 @keyframes fadeInUp {
     0% {
@@ -140,7 +178,116 @@ section {
     }
 }
 
-.SuPrathon_Logo {
-    height: 100px;
-    width: 100px;
-}
+
+
+/* styles.css (Append to your existing CSS) */
+.faq-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .faq-item {
+    background: #1c1c1c;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 255, 247, 0.1);
+  }
+  
+  .faq-question {
+    width: 100%;
+    background: #fff;
+    color: #111;
+    font-weight: 600;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: background 0.3s;
+  }
+  
+  .faq-question:hover {
+    background: #00fff7;
+    color: #000;
+  }
+  
+  .faq-answer {
+    display: none;
+    background: #e5e5e5;
+    padding: 15px 20px;
+    font-size: 0.95rem;
+    color: #111;
+  }
+  
+  .faq-item.active .faq-answer {
+    display: block;
+  }
+  
+  .faq-question .icon {
+    font-size: 1.2rem;
+    background: #3a27ff;
+    color: #fff;
+    border-radius: 6px;
+    padding: 2px 10px;
+    margin-left: 15px;
+  }
+  
+  .faq-item.active .faq-question .icon {
+    content: "-";
+    transform: rotate(45deg);
+  }
+
+
+
+
+
+  /* styles.css (Append to your existing CSS) */
+.prize-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 40px 20px;
+  }
+  
+  .prize-card {
+    background: #1c1c1c;
+    border: 2px solid #00fff7;
+    border-radius: 16px;
+    text-align: center;
+    padding: 30px 20px;
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(0, 255, 247, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .prize-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 255, 247, 0.3);
+  }
+  
+  .prize-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    animation: float 2s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+  
+  .prize-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  
+  .prize-card p {
+    font-size: 1rem;
+    color: #ccc;
+  }
+  
