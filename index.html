@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header>
+    <!-- <header>
         <h1>SuPrathon 2k25</h1>
         <nav>
             <a href="#about">About</a>
@@ -22,7 +22,28 @@
             <a href="#faq">FAQ's</a>
             <a href="#register" class="register-link">Register Now</a>
         </nav>
+    </header> -->
+
+
+    <header>
+        <div class="nav-container">
+            <nav class="navbar" id="navbar">
+                <a href="#about">About</a>
+                <a href="#mentors">Mentors</a>
+                <a href="#schedule">Schedule</a>
+                <a href="#prizes">Prize</a>
+                <a href="#partners">Partners</a>
+                <a href="#faq">FAQ's</a>
+                <a href="#register" class="register-btn">Register Now</a>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </header>
+    <img src="SuPrathon_Logo.png" alt="SuPrathon_Logo" class="SuPrathon_Logo">
 
     <section id="about" data-animate>
         <h2 class="section-title">About SuPrathon</h2>
@@ -98,11 +119,55 @@
         </div>
     </section>
 
-    <section id="schedule"data-animate > 
+    <!-- <section id="schedule" data-animate>
         <h2 class="section-title">Schedule</h2>
         <p class="section-description">Day 1: Kickoff & Ideation<br>Day 2: Development & Mentorship<br>Day 3: Demos &
             Judging</p>
+    </section> -->
+
+
+
+    <section id="schedule" class="schedule-section">
+        <h2 class="section-title">Schedule</h2>
+        <div class="schedule-container">
+            <div class="schedule-card">
+                <div class="schedule-date">13 Feb 2025</div>
+                <div class="schedule-info">
+                    <p class="time">00:00</p>
+                    <p class="event">Registrations Open</p>
+                </div>
+            </div>
+            <div class="schedule-card">
+                <div class="schedule-date">Sat Mar 15 2025</div>
+                <div class="schedule-info">
+                    <p class="time">23:59</p>
+                    <p class="event">Registrations Close</p>
+                </div>
+            </div>
+            <div class="schedule-card">
+                <div class="schedule-date">Mon Mar 17 2025</div>
+                <div class="schedule-info">
+                    <p class="time">10:00</p>
+                    <p class="event">Shortlisted Teams Announcement</p>
+                </div>
+            </div>
+            <div class="schedule-card">
+                <div class="schedule-date">Wed Mar 19 2025</div>
+                <div class="schedule-info">
+                    <p class="time">10:00</p>
+                    <p class="event">Final Pitch Session</p>
+                </div>
+            </div>
+            <div class="schedule-card">
+                <div class="schedule-date">Tue Mar 25 2025</div>
+                <div class="schedule-info">
+                    <p class="time">10:00</p>
+                    <p class="event">Results</p>
+                </div>
+            </div>
+        </div>
     </section>
+
 
     <!-- <section id="prize">
         <h2 class="section-title">Prizes</h2>
