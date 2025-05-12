@@ -1,0 +1,175 @@
+## SuPrathon Hackathon Problem Statements 
+
+### Domain 1: Web Development
+
+#### 1. Multi-Tenant SaaS Builder *(Hard)*
+
+**Description:** Create a web platform that allows users to build and manage their own mini SaaS applications (e.g., like a simplified Notion or Trello) with authentication, user roles, and theme customization.
+**Expected Output:** A SaaS system builder that supports user signups, CRUD for custom components (boards, forms), and admin-level tenant separation.
+
+#### 2. Real-Time Feedback Wall *(Medium)*
+
+**Description:** Build a live feedback wall for classrooms/events where people can post messages anonymously or with names, and moderators can pin/delete responses in real-time.
+**Expected Output:** A web app with WebSocket-based live updates, moderation tools, and themed display UI.
+
+#### 3. Event Landing Page Generator *(Easy)*
+
+**Description:** Create a tool where users can generate and customize landing pages for events with drag-and-drop sections.
+**Expected Output:** A web builder with ready-made templates, customizable text/images, and a final exportable HTML output.
+
+#### 4. Resume Portfolio Maker *(Medium)*
+
+**Description:** Build a resume + portfolio creator where users can fill in details and get a live preview of their profile site.
+**Expected Output:** A real-time preview editor and downloadable HTML/CSS resume.
+
+#### 5. Community Blog Platform *(Easy)*
+
+**Description:** Make a simple blog platform where users can register, post articles, and comment.
+**Expected Output:** Clean, mobile-responsive blog system with markdown editor and user auth.
+
+#### 6. Custom Admin Dashboard *(Hard)*
+
+**Description:** Develop a generic dashboard system with widgets (e.g., stats, graphs, tables) that users can configure.
+**Expected Output:** Widget layout grid, custom themes, drag-and-drop reordering, and persistent state.
+
+#### 7. Public API Explorer *(Medium)*
+
+**Description:** A frontend-only web app that connects to public APIs (e.g., NASA, weather) and visualizes data interactively.
+**Expected Output:** Charts, graphs, and modals generated from live API fetch requests.
+
+---
+
+### Domain 2: App Development
+
+#### 1. Bluetooth Offline Messenger *(Hard)*
+
+**Description:** An Android app that lets nearby users chat without internet using Bluetooth mesh networking.
+**Expected Output:** Offline chat history, multiple user broadcast, retry on disconnect.
+
+#### 2. Mental Wellness Tracker *(Medium)*
+
+**Description:** A mood-tracking app where users log their mental state daily, and the app visualizes patterns over time.
+**Expected Output:** Chart-based mood history, journal entries, and basic sentiment suggestions.
+
+#### 3. Grocery List App with Voice Input *(Easy)*
+
+**Description:** An app that lets users build grocery lists via voice commands or typing.
+**Expected Output:** Real-time list builder with voice-to-text API and local storage.
+
+#### 4. Event Reminder with GPS Trigger *(Medium)*
+
+**Description:** An app that sends reminders when users are near predefined locations.
+**Expected Output:** GPS background tracking, reminder system, and simple UI with location list.
+
+#### 5. Volunteer App for NGOs *(Easy)*
+
+**Description:** An app for NGO campaigns where users can join, get updates, and log activities.
+**Expected Output:** Campaign joiner, calendar view, and post-activity feedback.
+
+#### 6. Health Tracker with Camera Integration *(Hard)*
+
+**Description:** Build an app that scans food items via camera, estimates calories, and tracks intake.
+**Expected Output:** Image recognition integration, food database API, and intake log.
+
+---
+
+### Domain 3: AI & ML
+
+#### 1. News Veracity Detector *(Hard)*
+
+**Description:** Build a system that checks whether a news article is likely real or fake using language modeling and fact databases.
+**Expected Output:** Classification label (real/fake), highlight of suspicious sentences, confidence score.
+
+#### 2. Resume Skill Matcher *(Medium)*
+
+**Description:** Create a tool that compares resumes with job descriptions and gives match percentage.
+**Expected Output:** Text comparison using NLP, scoring system, and missing skill suggestions.
+
+#### 3. Smart Expense Categorizer *(Easy)*
+
+**Description:** Build an app that takes transaction texts and automatically tags them into categories (e.g., food, bills).
+**Expected Output:** Labeling model, pie chart of categories, editable labels.
+
+#### 4. Learning Style Predictor *(Medium)*
+
+**Description:** Predict a user’s learning style (visual, auditory, kinesthetic) based on answers to a quiz.
+**Expected Output:** Result dashboard with learning tips, model confidence.
+
+#### 5. Toxic Comment Detector *(Easy)*
+
+**Description:** Build a comment section where AI detects and flags toxic or offensive content.
+**Expected Output:** Comment box, real-time toxicity warning, auto-hide feature.
+
+#### 6. Crop Yield Predictor *(Hard)*
+
+**Description:** Given past climate, soil, and crop data, predict future yield.
+**Expected Output:** Regression model, heatmaps, confidence band visual.
+
+---
+
+### Domain 4: Blockchain & Web3
+
+#### 1. Decentralized Polling App *(Easy)*
+
+**Description:** A voting app that stores results on blockchain and prevents duplicate votes.
+**Expected Output:** Smart contract, user auth (wallet), results page.
+
+#### 2. Crypto Portfolio Tracker *(Medium)*
+
+**Description:** Build an app that connects to wallets and tracks portfolio growth over time.
+**Expected Output:** Wallet API, price graphs, alerts.
+
+#### 3. NFT-based Ticketing System *(Medium)*
+
+**Description:** Design a ticketing app where each event ticket is minted as an NFT.
+**Expected Output:** NFT minting UI, QR verification for entry, transferability.
+
+#### 4. DAO Proposal Voting *(Hard)*
+
+**Description:** A governance app where token holders can propose, vote, and execute changes.
+**Expected Output:** Wallet connect, token-weighted vote system, smart contract execution.
+
+#### 5. Proof-of-Existence for Documents *(Easy)*
+
+**Description:** Users can hash documents and store the hash on-chain as proof of originality.
+**Expected Output:** Document upload, hash display, transaction history.
+
+#### 6. Blockchain Donation Tracker *(Medium)*
+
+**Description:** Track donations using a smart contract and display fund usage transparency.
+**Expected Output:** Transparent ledger, donation goal progress, timestamped logs.
+
+---
+
+### Domain 5: Game Development
+
+#### 1. Multiplayer Arena Game *(Hard)*
+
+**Description:** Build a real-time battle game (2-4 players) using sockets and dynamic physics.
+**Expected Output:** Login, matchmaking, gameplay, score leaderboard.
+
+#### 2. Puzzle Game with Storyline *(Medium)*
+
+**Description:** Design a puzzle game where completing puzzles unlocks new story chapters.
+**Expected Output:** Puzzle mechanics, story modal, progress tracking.
+
+#### 3. Jump & Dash Platformer *(Easy)*
+
+**Description:** A simple keyboard-controlled platformer with levels, score, and lives.
+**Expected Output:** HTML5 canvas game or Unity with physics.
+
+#### 4. AR Educational Game *(Medium)*
+
+**Description:** Create a mobile game that teaches basic science via AR interactions.
+**Expected Output:** Marker-based recognition, animations, quiz at levels.
+
+#### 5. Idle Resource Game *(Medium)*
+
+**Description:** Build a game where users manage resources (e.g., mining, growing) and upgrade tech trees.
+**Expected Output:** UI with resource counters, upgrade mechanics, progress save/load.
+
+#### 6. Maze Generator with AI Player *(Hard)*
+
+**Description:** Generate random mazes and have an AI bot that learns to solve them.
+**Expected Output:** Maze generation, training AI, timer & result graph.
+
