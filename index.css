@@ -187,55 +187,6 @@ section {
 .mentor-socials a:hover {
   transform: scale(1.2);
 }
-
-/* .register-button {
-    background: #00fff7;
-    color: #000;
-    padding: 12px 30px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background 0.3s;
-}
-
-.register-button:hover {
-    background: #00e1d2;
-} */
-
-
-/* .register-btn {
-    background: transparent;
-    color: #00fff7;
-    border: 2px solid #00fff7;
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    box-shadow: 0 0 0 transparent;
-  }
-  
-  .register-btn:hover {
-    background: #00fff7;
-    color: #000;
-    box-shadow: 0 0 15px #00fff7, 0 0 30px #00fff7;
-    transform: scale(1.05);
-  }
-
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-} */
-
-
-
-
 .register-btn {
   position: relative;
   display: inline-flex;
@@ -429,9 +380,6 @@ section {
 
 
 
-
-
-
 /* Css for Schedule Section */
 
 
@@ -524,9 +472,6 @@ section {
     text-align: left;
   }
 }
-
-
-
 
 /* Domain section css */
 
@@ -621,5 +566,69 @@ section {
   100% {
     transform: translateX(-50%);
   }
+}
+
+
+/* Marque of Taglines */
+
+.marquee-section {
+  overflow: hidden;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.marquee-line {
+  white-space: nowrap;
+  display: flex;
+  font-size: 3rem;
+  font-weight: 800;
+  font-family: 'Orbitron', sans-serif;
+  color: #00ffe7;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.9;
+  line-height: 1.5;
+  align-items: center;
+}
+
+.marquee-content {
+  display: flex;
+  width: max-content;
+  align-items: center;
+}
+
+.marquee-left .marquee-content {
+  animation: scroll-left 20s linear infinite;
+}
+
+.marquee-right .marquee-content {
+  animation: scroll-right 20s linear infinite;
+}
+
+.marquee-content span {
+  display: flex;
+  align-items: center;
+  padding-right: 4rem;
+}
+.hacker-img {
+  width: 90px; /* Increased size */
+  height: auto;
+  margin: 0 20px;
+  filter: drop-shadow(0 0 4px #00ffe7) drop-shadow(0 0 5px #00ffe7);
+  transition: transform 0.3s ease;
+}
+
+.hacker-img:hover {
+  transform: scale(1.05);
+}
+
+@keyframes scroll-left {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes scroll-right {
+  0%   { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
 }
 
