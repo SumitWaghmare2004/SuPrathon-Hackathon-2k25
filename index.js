@@ -39,9 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-
-
-
   document.addEventListener("DOMContentLoaded", () => {
     const hamburger = document.getElementById("hamburger");
     const navbar = document.getElementById("navbar");
@@ -51,8 +48,6 @@ document.addEventListener("DOMContentLoaded", () => {
       hamburger.classList.toggle("open");
     });
   });
-
-
 
   // Domain Section JS
 

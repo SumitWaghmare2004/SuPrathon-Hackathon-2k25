@@ -15,8 +15,6 @@ html {
   transform: translateY(0);
 }
 
-
-
 /* styles.css */
 * {
   margin: 0;
@@ -307,10 +305,6 @@ section {
   transform: rotate(45deg);
 }
 
-
-
-
-
 /* styles.css (Append to your existing CSS) */
 .prize-grid {
   display: grid;
@@ -378,11 +372,7 @@ section {
 
 }
 
-
-
 /* Css for Schedule Section */
-
-
 .schedule-section {
   padding: 60px 20px;
   /* background-color: #f9f9f9; */
@@ -475,8 +465,6 @@ section {
 
 /* Domain section css */
 
-
-
 .domain-section {
   background-color: #0e0e0e;
   padding: 80px 20px;
@@ -523,8 +511,6 @@ section {
   font-size: 14px;
   line-height: 1.6;
 }
-
-
 /* Partners logo section */
 
 .partners-section {
@@ -567,8 +553,6 @@ section {
     transform: translateX(-50%);
   }
 }
-
-
 /* Marque of Taglines */
 
 .marquee-section {
