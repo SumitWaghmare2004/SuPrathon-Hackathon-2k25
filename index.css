@@ -185,6 +185,7 @@ section {
 .mentor-socials a:hover {
   transform: scale(1.2);
 }
+
 .register-btn {
   position: relative;
   display: inline-flex;
@@ -410,8 +411,10 @@ section {
 
 .schedule-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 25px cyan; /* Glowy blue shadow */
-  background-color: rgba(70, 50, 218, 0.05);   /* Light glow effect background */
+  box-shadow: 0 0 25px cyan;
+  /* Glowy blue shadow */
+  background-color: rgba(70, 50, 218, 0.05);
+  /* Light glow effect background */
 }
 
 
@@ -511,6 +514,7 @@ section {
   font-size: 14px;
   line-height: 1.6;
 }
+
 /* Partners logo section */
 
 .partners-section {
@@ -549,10 +553,12 @@ section {
   0% {
     transform: translateX(0%);
   }
+
   100% {
     transform: translateX(-50%);
   }
 }
+
 /* Marque of Taglines */
 
 .marquee-section {
@@ -594,8 +600,10 @@ section {
   align-items: center;
   padding-right: 4rem;
 }
+
 .hacker-img {
-  width: 90px; /* Increased size */
+  width: 90px;
+  /* Increased size */
   height: auto;
   margin: 0 20px;
   filter: drop-shadow(0 0 4px #00ffe7) drop-shadow(0 0 5px #00ffe7);
@@ -607,12 +615,51 @@ section {
 }
 
 @keyframes scroll-left {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 @keyframes scroll-right {
-  0%   { transform: translateX(-50%); }
-  100% { transform: translateX(0); }
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 
+/* Contact Sections Cards of Heads */
+
+.bounce {
+  display: inline-block;
+  animation: bounce 2s infinite;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+a:hover {
+  color: cyan;
+  text-shadow: 0 0 10px cyan;
+}
+
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
