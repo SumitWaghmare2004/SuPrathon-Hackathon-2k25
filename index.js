@@ -36,19 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
     animateElems.forEach(el => observer.observe(el));
   });
 
-
-
-
-  document.addEventListener("DOMContentLoaded", () => {
-    const hamburger = document.getElementById("hamburger");
-    const navbar = document.getElementById("navbar");
-  
-    hamburger.addEventListener("click", () => {
-      navbar.classList.toggle("active");
-      hamburger.classList.toggle("open");
-    });
-  });
-
   // Domain Section JS
 
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -57,5 +44,26 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector(this.getAttribute('href')).scrollIntoView({
       behavior: 'smooth'
     });
+  });
+});
+
+
+
+// Animated Hamburger Mobile View ( Hamburger Code )
+
+const hamburger = document.querySelector('.hamburger');
+const navbar = document.querySelector('.navbar');
+const navLinks = document.querySelectorAll('nav a');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  navbar.classList.toggle('active');
+});
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    // Close navbar and reset hamburger on link click
+    hamburger.classList.remove('active');
+    navbar.classList.remove('active');
   });
 });

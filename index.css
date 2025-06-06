@@ -83,12 +83,16 @@ nav a:hover,
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 255, 247, 0.2);
-    display: none;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
     z-index: 1000;
   }
 
   .navbar.active {
-    display: flex;
+    visibility: visible;
+    opacity: 1;
   }
 
   .hamburger {
@@ -105,13 +109,28 @@ nav a:hover,
   }
 
   .hamburger span {
+    display: block;
     height: 3px;
     width: 100%;
     background: #00fff7;
     border-radius: 2px;
-    transition: 0.3s ease;
+    transition: all 0.4s ease;
+    transform-origin: 4px 2px;
+  }
+
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
   }
 }
+
 
 
 section {
